@@ -13,6 +13,7 @@
 !/log/.keep
 !/tmp/.keep
 /config/secrets.yml
-/config/databsae.yml
+/config/database.yml
+/config/environments.yml    
 # Ignore Byebug command history file.
 .byebug_history
