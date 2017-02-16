@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @company.email %>
+</p>
+
+<p>
+  <strong>Gusto:</strong>
+  <%= @company.gusto_id %>
+</p>
+
+<p>
+  <strong>Redirect uri:</strong>
+  <%= @company.redirect_uri %>
+</p>
+
+<p>
+  <strong>Client secret:</strong>
+  <%= @company.client_secret %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @company.password %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

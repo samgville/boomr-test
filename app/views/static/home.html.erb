@@ -1,0 +1,20 @@
+<h1>Static#home</h1>
+
+
+<% if company_signed_in? %>
+    <div>Signed in as... <%= current_company.email %></div>
+    <% if current_company.client_secret.present? and current_company.redirect_uri.present? %>
+    <%= link_to "Connect your Gusto Acount", "https://api.gusto-demo.com/oauth/authorize?client_id="+current_company.client_secret+
+        "&redirect_uri="+current_company.redirect_uri+"&response_type=code"%>
+    <%end%>
+  </br>
+    <%= link_to('Employees', company_employees_path(current_company.id)) %>
+  </br>
+    <%= link_to('Edit Company Info', edit_company_path(current_company.id)) %>
+<% end %>
+
+
+
+
+
+<br>
