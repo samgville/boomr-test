@@ -63,6 +63,7 @@ class CompaniesController < ApplicationController
 
   # Integrate with Gusto
   def integrate
+    current_company.authenticate
 
   end
 
